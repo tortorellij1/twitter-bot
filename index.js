@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => { 
     console.log("App started successfully 🙌🙌");
-    res.send('oops2');
+    res.send('oops23');
     AutoDM();
 });
 
