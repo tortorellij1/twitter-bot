@@ -9,6 +9,7 @@ const AutoDM = () => {
 };
 
 const SendMessage = user => {
+  console.log('i was just followed');
   const { screen_name, name } = user.source;
 
   const obj = {
@@ -19,6 +20,7 @@ const SendMessage = user => {
   if (screen_name != my_user_name) {
     console.log(" 🎉🎉🎉🎉 New Follower  🎉🎉🎉🎉🎉 ");
     setTimeout(() => {
+      console.log('tesssst');
       T.post("direct_messages/new", obj)
         .catch(err => {
           console.error("error", err.stack);
